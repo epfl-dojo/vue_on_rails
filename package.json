@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build"
+  },
+  "aliasify": {
+    "aliases": {
+      "vue": "vue/dist/vue.js"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "vueify"
+    ]
+  },
+  "devDependencies": {
+    "aliasify": "^2.1.0",
+    "babel-core": "^6.26.0",
+    "babelify": "^8.0.0",
+    "gulp": "3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cli": "1.2.1",
+    "gulp-concat": "2.6.0",
+    "vueify": "~9.0.0"
+  },
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}
